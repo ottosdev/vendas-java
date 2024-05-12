@@ -9,7 +9,13 @@ public class ApiErros {
     @Getter
     private List<String> errors;
 
+    public ApiErros(List<String> errors) {
+        this.errors = errors;
+    }
+
     public ApiErros(String error) {
         this.errors = Arrays.asList(error);
     }
+
+
 }
